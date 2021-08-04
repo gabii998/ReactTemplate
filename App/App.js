@@ -1,7 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Navbar from "./Navbar";
 
 const App = () => {
-   return <div>Hello, World!</div>;
+   return <Fragment>
+      <Navbar></Navbar>
+   </Fragment>;
 };
 
 export default App;
