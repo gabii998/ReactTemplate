@@ -13,7 +13,7 @@ module.exports = {
   },
   target: "web",
   devServer:{
-    
+    historyApiFallback: true,
     port:"9500",
     contentBase: ["./App"],
     open:true
@@ -23,6 +23,11 @@ module.exports = {
   },
   module: {
     rules:[
+      {
+        test: /\.js$/,
+        enforce: 'pre',
+        use: ['source-map-loader'],
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
