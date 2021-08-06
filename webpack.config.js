@@ -13,7 +13,10 @@ module.exports = {
   },
   target: "web",
   devServer:{
+    publicPath: "/",
+    compress: true,
     historyApiFallback: true,
+    
     port:"9500",
     contentBase: ["./App"],
     open:true
@@ -63,6 +66,6 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: "index.html"
     }),
-    new CleanWebpackPlugin({cleanAfterEveryBuildPatterns:['dist']})
+   // new CleanWebpackPlugin({cleanAfterEveryBuildPatterns:['dist']})
   ]
 }

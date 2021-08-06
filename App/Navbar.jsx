@@ -1,13 +1,11 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
     return(
-    <nav class="bg-white shadow-lg">
-        <a>Inicio</a>
-        <a>Productos</a>
-        <a>Novedades</a>
-        <a>Pedido</a>
+    <nav className="bg-white p-4 font-semibold ">
+        <NavLink className="border-b-4 p-4" activeClassName=" border-indigo-600" to="/Productos">Productos</NavLink>
     </nav>
     )
 
