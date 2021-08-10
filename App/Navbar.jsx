@@ -5,7 +5,7 @@ const Navbar = () => {
 
     return(
     <nav className="bg-white p-4 font-semibold ">
-        <NavLink className="border-b-4 p-4" activeClassName=" border-indigo-600" to="/Productos">Productos</NavLink>
+        <NavLink className="border-b-4 p-4 border-transparent" activeClassName=" border-indigo-600" to="/Productos">Productos</NavLink>
     </nav>
     )
 

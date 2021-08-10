@@ -5,6 +5,7 @@ import "./App.css";
 import GuardedRoute from "./common/GuardedRoute";
 import Landing from "./Landing";
 import Usuario from "./model/Usuario";
+import DetalleProducto from "./DetalleProducto";
 
 const App = () => {
 
@@ -12,8 +13,10 @@ const App = () => {
     <div className="bg-gray-100 min-h-screen">
       <Router>
         <Navbar/>
-        <Switch>
+        <Switch>\
+        <Route path="/Productos/:id"><DetalleProducto></DetalleProducto></Route>
            <Route path="/Productos"><Landing/></Route>
+           
 
           {/* <GuardedRoute
             component={Landing}
